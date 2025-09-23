@@ -31,8 +31,12 @@ print("Mayusculas: ",cadena2.upper())
 # 8. Pide una cadena por teclado y muéstrala con todas las letras en minúsculas.
 print("Mayusculas: ",cadena2.lower())
 # 9. Pide una cadena por teclado y muéstrala en rojo y negrita.
+print("\033[31m"+"\033[1m"+cadena2+"\033[0m"+"\033[0m")
 # 10. En la cadena “Seremos capaces de ir muy lejos” muestra la posición y la última de la letra s
+cadena3="Seremos capaces de ir muy lejos"
+print(cadena3.rfind("s"))
 # 11. Pide una cadena por teclado y muéstrala al revés
+print(cadena2[::-1])
 
 
 
