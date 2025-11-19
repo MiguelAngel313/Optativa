@@ -54,8 +54,14 @@ for i in range(5):
     #Utilizo random.choice(lista) para seleccionar 5 opciones alieatorias
     elegidas.append(random.choice(matriculas))
 
-print("Elegidas", elegidas)
+#Muestro por pantalla la lista de matriculas elegidas
+print("Lista elegidas:", elegidas)
 
+#Generar diccionario llamado multas
+multas = {}
 
+for i in elegidas:
+    multas[i] = caducidades[i] * 100
+print("Lista multas: ", multas)
 
 #Generar un nuevo diccionarrio llamado multas
