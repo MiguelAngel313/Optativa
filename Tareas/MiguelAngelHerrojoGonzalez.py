@@ -19,5 +19,5 @@ print('Temperaturas positivas: ',temp_positivas)
 #grados Celsius a grados Fahrenheit es: Fahrenheit = Celsius * 9 / 5 + 32 Se debe imprimir
 #el resultado.
 
-F = [celsius * 9 / 5 + 32 for celsius in temp_positivas]
-print('TEmperaturas en celsius: ',F)
+F = list(map(lambda celsius: celsius * 9 / 5 + 32, temp_positivas))
+print('TEmperaturas en fahrenheit: ',F)
